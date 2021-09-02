@@ -149,14 +149,15 @@ main {
     }
 
     .menu a {
-        padding: 1rem 0;
-        margin: 0 1rem;
+        padding: 2rem 0;
+        margin: 1rem 0.5rem;
         border-bottom: 2px solid #44BBA4;
     }
 
     .menu li a {
         display: flex;
         justify-content: center;
+        margin-right: 35px;
     }
 
     .btn-mobile {
