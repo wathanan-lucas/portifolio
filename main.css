@@ -118,9 +118,14 @@ main {
         display: block;
     }
 
+    .logo {
+        margin-top: 5px;
+    }
+
     .menu {
         overflow: hidden;
-        opacity: 0;
+        opacity: 0; 
+        pointer-events: none;
         display: none;
         position: absolute;
         width: 100%;
@@ -142,6 +147,7 @@ main {
     .nav.active .menu{
         display: block;
         opacity: 1;
+        pointer-events: all;
     }
 
     .nav.active .menu li a{
