@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap" rel="stylesheet">
     <title>Wathanan</title>
 </head>
@@ -27,21 +31,43 @@
 
     <main>
         
-        <div class="apresentacao">
+        <div class="home ">
+            <div class="apresentacao">
 
-            <div class="title">
-                <h1>Olá, eu sou o Wathanan</h1>
-                <h3>Front-end Developer</h3>
-                <p>Estudando programação web, e futuro programador Full-Stack. </p>
+                <div class="title animate__animated animate__fadeInLeftBig">
+                    <h1>Olá, eu sou o Wathanan</h1>
+                    <h3>Front-end Developer</h3>
+                    <p>Estudando programação web, e futuro programador Full-Stack. </p>
+    
+                    <div class="social-button">
+                        <div class="button">
+                            <a href="https://api.whatsapp.com/send?phone=5511941042099&text=Olá,%20gostei%20do%20seu%20portifólio!" target="_blank">Contact me</a> 
+                        </div>
+    
+                        <div class="social-midias">
+                            <a href="https://github.com/wathanan-lucas" target="_blank"><img src="/assets/github.png" alt=""></a>
+                            <a href="https://www.instagram.com/wathananlucas/" target="_blank"><img src="/assets/instagram.png" alt=""></a>
+                            <a href="https://www.linkedin.com/in/wathanan-lucas/" target="_blank"><img src="/assets/linkedin.png" alt=""></a>
+                        </div>
+                    </div>  
 
-                <div class="button">
-                    <a href="https://api.whatsapp.com/send?phone=5511941042099&text=Olá,%20gostei%20do%20seu%portifólio!" target="_blank">Contact me</a> 
                 </div>
+                
+                <div class="image-position animate__animated animate__fadeInRightBig">
+                    <div class="img-eu">
+                        <img src="./assets/eu4.jpg" alt="foto do wathanan">
+                    </div>
+                </div>
+                
+                
             </div>
-
-            <div class="img-eu">
-                <img src="./assets/eu4.jpg" alt="foto do wathanan">
-            </div>
+           
+        </div>
+        
+        <div class="about wow animate__animated animate__fadeInDown">
+            <div class="titulo">
+                <h1 class="">teste</h1>
+            </div>        
             
         </div>
 
@@ -49,6 +75,11 @@
     </main>
 
 
-    <script src="./js/script.js"></script>
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 </body>
 </html>
