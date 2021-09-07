@@ -31,12 +31,15 @@ li {
     margin-left: 18px;
 }
 
+.home {
+    height: calc(100vh - 70px);
+}   
+
 .apresentacao {
     padding: 80px;
     align-items: center;
     display: grid;
     grid-template-columns: 2.8fr 1fr;
-    height: 100vh;
     /* display: flex;
     justify-content: space-between; */
 }
