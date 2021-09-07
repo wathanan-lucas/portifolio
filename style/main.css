@@ -31,16 +31,12 @@ li {
     margin-left: 18px;
 }
 
-
-.home {
-    height: 100vh;
-}
-
 .apresentacao {
     padding: 80px;
     align-items: center;
     display: grid;
     grid-template-columns: 2.8fr 1fr;
+    height: 100vh;
     /* display: flex;
     justify-content: space-between; */
 }
