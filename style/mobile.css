@@ -1,0 +1,162 @@
+@media (max-width: 722px) {
+    #btn-mobile {
+        display: block;
+    }
+
+    .logo {
+        margin-top: 5px;
+    }
+
+    .menu {
+        overflow: hidden;
+        opacity: 0; 
+        pointer-events: none;
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        display: block;
+        height: calc(100vh - 70px);
+        z-index: 1000; 
+        transition: .3s;
+        background-color: #F6F7EB;
+        cursor: unset;
+    }
+
+    .menu li a {
+        overflow: hidden;
+        opacity: 0;
+    }
+
+    .nav.active .menu{
+        display: block;
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .nav.active .menu li a{
+        opacity: 1;
+    }
+
+    .menu a {
+        padding: 2rem 0;
+        margin: 1rem 0.5rem;
+        border-bottom: 2px solid #44BBA4;
+    }
+
+    .menu li a {
+        display: flex;
+        justify-content: center;
+        margin-right: 35px;
+    }
+
+    .btn-mobile {
+        display: flex;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    .hamburguer {
+        width: 20px;
+        border-top: 2px solid;
+        display: block;
+    }
+
+    .hamburguer::after, .hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    .nav.active .hamburguer {
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    .apresentacao {
+      padding: 45px;
+      margin: 0;
+      display: block;
+      max-width: 750px;
+    }
+
+    .apresentacao .title h3 {
+        font-size: 22px;
+    }
+
+    .apresentacao .title p {
+        margin-top: 5px;
+        max-width: 400px;
+    }
+
+    .img-eu img {
+        height: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        margin-top: 25px;
+    }
+
+    .image-position {
+        display: flex;
+        justify-content: end;
+    }
+
+    .social-midias img {
+        height: 20px;
+    }
+
+    .about {
+        height: 100vh;
+    }
+
+}
+
+@media(max-width: 650px) {
+    .content-about {
+        display: block;
+        padding: 40px;
+    }
+    
+    .description .text-description p {
+        margin-top: 20px;
+    }
+
+    .description {
+        max-width: 100%;
+    }
+
+    .content-about .photo img {
+        height: 230px;
+    }
+
+    .content-about .photo {
+        height: 230px;
+        width: 230px;
+    }
+
+    .description .text-description p {
+        margin-left: 10px;
+    }
+
+    .description .button {
+        margin-left: 10px;
+    }
+}

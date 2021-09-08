@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/mobile.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
@@ -21,8 +22,8 @@
                 <span class="hamburguer"></span>
             </button>
             <ul class="menu" role="menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="">Skils</a></li>
                 <li><a href="">Portifolio</a></li>
             </ul>
@@ -31,10 +32,10 @@
 
     <main>
         
-        <div class="home ">
-            <div class="apresentacao ">
+        <div class="home" id="home">
+            <div class="apresentacao">
 
-                <div class="title">
+                <div class="title animate__animated animate__backInUp">
                     <h1>Olá, eu sou o Wathanan</h1>
                     <h3>Front-end Developer</h3>
                     <p>Estudando programação web, e futuro programador Full-Stack. </p>
@@ -53,7 +54,7 @@
 
                 </div>
                 
-                <div class="image-position">
+                <div class="image-position animate__animated animate__backInDown">
                     <div class="img-eu">
                         <img src="./assets/eu4.jpg" alt="foto do wathanan">
                     </div>
@@ -64,12 +65,38 @@
            
         </div>
         
-        
+        <div class="about wow animate__animated animate__fadeInDown" id="about">
+            
+            <div class="title-about">
+                <h1>About me</h1>
+            </div>
+
+            <div class="content-about">
+                <div class="photo">
+                    <img src="./assets/eu.png" alt="">
+                </div>
+                <div class="description">
+                    
+                    <div class="text-description">
+                        <p>Olá, meu nome Wathanan Lucas Santos, tenho 17 anos, terminei o curso técnico de Desenvolvimento de Sistemas em 2021, e logo após, iniciei o Técnologo em Análise e Desenvolvimento de Sistemas.</p>
+                    </div>     
+                    <div class="button">
+
+                        <a target="_blank" href="./assets/Wathanan-CV.pdf">
+                            <img src="./assets/file.png" alt="">
+                            <p>Download CV</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         
     </main>
 
 
+    <script src="./js/scroll.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/wow.min.js"></script>
     <script>

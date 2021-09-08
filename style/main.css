@@ -5,6 +5,10 @@
     font-family: Poppins;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
    background-color: #F6F7EB;
 }
@@ -32,7 +36,7 @@ li {
 }
 
 .home {
-    height: calc(100vh - 70px);
+    height: 100vh;
 }   
 
 .apresentacao {
@@ -77,7 +81,7 @@ li {
     align-items: center;
 }
 
-.title h1 {
+h1 {
     color: #393E41;
 }
 
@@ -117,8 +121,7 @@ li {
 
 .menu {
     display: flex;
-    list-style: none;
-}
+    list-style: none;}
 
 .menu a {
     display: block;
@@ -136,139 +139,64 @@ li {
 }
 
 .about {
+    height: 75vh;
+}
+
+.title-about {
+    display: flex;
+    justify-content: center;
+}
+
+.content-about {
+    padding: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-.animate__animated.animate__fadeIn {
-    --animate-duration: .8s 
+.content-about .photo {
+    height: 250px;
+    width: 250px;
+    background-color: #44BBA4;
+    clip-path: circle();
 }
 
-@media (max-width: 722px) {
-    #btn-mobile {
-        display: block;
-    }
+.content-about .photo img {
+    height: 250px;
+    object-fit: cover;
+}   
 
-    .logo {
-        margin-top: 5px;
-    }
-
-    .menu {
-        overflow: hidden;
-        opacity: 0; 
-        pointer-events: none;
-        display: none;
-        position: absolute;
-        width: 100%;
-        top: 70px;
-        right: 0;
-        display: block;
-        height: calc(100vh - 70px);
-        z-index: 1000; 
-        transition: .3s;
-        background-color: #F6F7EB;
-        cursor: unset;
-    }
-
-    .menu li a {
-        overflow: hidden;
-        opacity: 0;
-    }
-
-    .nav.active .menu{
-        display: block;
-        opacity: 1;
-        pointer-events: all;
-    }
-
-    .nav.active .menu li a{
-        opacity: 1;
-    }
-
-    .menu a {
-        padding: 2rem 0;
-        margin: 1rem 0.5rem;
-        border-bottom: 2px solid #44BBA4;
-    }
-
-    .menu li a {
-        display: flex;
-        justify-content: center;
-        margin-right: 35px;
-    }
-
-    .btn-mobile {
-        display: flex;
-        font-size: 1rem;
-        border: none;
-        background: none;
-        cursor: pointer;
-        gap: .5rem;
-    }
-
-    .hamburguer {
-        width: 20px;
-        border-top: 2px solid;
-        display: block;
-    }
-
-    .hamburguer::after, .hamburguer::before {
-        content: '';
-        display: block;
-        width: 20px;
-        height: 2px;
-        background: currentColor;
-        margin-top: 5px;
-        transition: .3s;
-        position: relative;
-    }
-
-    .nav.active .hamburguer {
-        border-top-color: transparent;
-    }
-
-    .nav.active .hamburguer::before {
-        transform: rotate(135deg);
-    }
-
-    .nav.active .hamburguer::after {
-        transform: rotate(-135deg);
-        top: -7px;
-    }
-
-    .apresentacao {
-      padding: 45px;
-      margin: 0;
-      display: block;
-      max-width: 750px;
-    }
-
-    .apresentacao .title h3 {
-        font-size: 22px;
-    }
-
-    .apresentacao .title p {
-        margin-top: 5px;
-        max-width: 400px;
-    }
-
-    .img-eu img {
-        height: 230px;
-        display: flex;
-        align-items: center;
-        justify-content: end;
-        margin-top: 25px;
-    }
-
-    .image-position {
-        display: flex;
-        justify-content: end;
-    }
-
-    .social-midias img {
-        height: 20px;
-    }
-    
+.description {
+    max-width: 620px;
 }
+
+.description .text-description p {
+    margin-left: 50px;
+}
+
+.description .button {
+    margin-left: 47px;
+    background-color: #44BBA4;
+    height: 40px;
+    width: 150px;
+}
+
+.description .button a {
+    display: flex;
+}
+
+.description .button p {
+    font-size: 15px;
+    color: white;
+}
+
+.description .button img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.animate__animated.animate__fadeInDown {
+    --animate-duration: 450ms;
+}
+
+
