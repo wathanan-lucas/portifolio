@@ -16,7 +16,7 @@ function scrollToId(event) {
     const section = document.querySelector(id).offsetTop;
     
     window.scroll({
-        top: section - 28,
+        top: section - 15,
     });
 }
 

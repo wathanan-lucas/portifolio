@@ -196,7 +196,8 @@ h1 {
 }
 
 .animate__animated.animate__fadeInDown {
-    --animate-duration: 690ms;
+    --animate-duration: .6s;
+    --animate-delay: .9s;
 }
 
 
