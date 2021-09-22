@@ -91,7 +91,7 @@
     }
 
     .apresentacao {
-      padding: 45px;
+      padding: 40px;
       margin: 0;
       display: block;
       max-width: 750px;
@@ -127,12 +127,9 @@
         height: 100vh;
     }
 
-}
-
-@media(max-width: 650px) {
     .content-about {
         display: block;
-        padding: 40px;
+        padding: 30px;
     }
     
     .description .text-description p {
@@ -159,4 +156,16 @@
     .description .button {
         margin-left: 10px;
     }
+    
+    .icon img {
+        height: 20px;
+        position: fixed;
+        top: 90%;
+        left: 90%;
+    }
+
+    .title-about {
+        padding: 30px 0 0 0;
+    }
+
 }

@@ -200,4 +200,10 @@ h1 {
     --animate-delay: .9s;
 }
 
+.icon img {
+    height: 25px;
+    position: fixed;
+    top: 90%;
+    left: 95%;
+}
 
