@@ -139,10 +139,12 @@ h1 {
 }
 
 .about {
-    height: 75vh;
+    height: 80vh;
 }
 
-.title-about {
+.title-about,
+.title-skills,
+.title-portifolio {
     display: flex;
     justify-content: center;
 }
@@ -205,5 +207,21 @@ h1 {
     position: fixed;
     top: 90%;
     left: 95%;
+}
+
+.barra-center {
+    display: flex;
+    justify-content: center;
+}
+
+.barra {
+    background-color: #44BBA4 ;
+    height: 4px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.skills {
+    height: 100vh;
 }
 
