@@ -6,13 +6,20 @@ function toggleMenu(event) {
     const nav = document.querySelector('.nav');
     
     nav.classList.toggle('active');
+    
     const active = nav.classList.contains('active');
     event.currentTarget.setAttribute('aria-expanded', active);
 
     if(active) {
         event.currentTarget.setAttribute('aria-label', 'Fechar Menu')
+        
+        document.documentElement.style.overflow = 'hidden';
+        document.body.scroll = "no"; 
     }else {
         event.currentTarget.setAttribute('aria-label', 'Abrir Menu')
+
+        document.documentElement.style.overflow = 'auto';
+        document.body.scroll = "yes"; 
     }
 }
 
