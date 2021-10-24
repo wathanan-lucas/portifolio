@@ -7,6 +7,10 @@
         margin-top: 5px;
     }
 
+    .home {
+        height: 95vh;
+    }
+
     .menu {
         overflow: hidden;
         opacity: 0; 
@@ -107,7 +111,7 @@
     }
 
     .img-eu img {
-        height: 230px;
+        height: 210px;
         display: flex;
         align-items: center;
         justify-content: end;
@@ -141,12 +145,12 @@
     }
 
     .content-about .photo img {
-        height: 230px;
+        height: 210px;
     }
 
     .content-about .photo {
-        height: 230px;
-        width: 230px;
+        height: 210px;
+        width: 210px;
     }
 
     .description .text-description p {
