@@ -27,11 +27,11 @@ function scrollToId(event) {
     const id = element.getAttribute('href');
     const section = document.querySelector(id).offsetTop;
 
-
     window.scroll({
         top: section - 15,
     });
     
+    document.documentElement.style.overflow = 'auto';
    
 }
 

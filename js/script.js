@@ -14,12 +14,12 @@ function toggleMenu(event) {
         event.currentTarget.setAttribute('aria-label', 'Fechar Menu')
         
         document.documentElement.style.overflow = 'hidden';
-        document.body.scroll = "no"; 
+        
     }else {
         event.currentTarget.setAttribute('aria-label', 'Abrir Menu')
 
         document.documentElement.style.overflow = 'auto';
-        document.body.scroll = "yes"; 
+        
     }
 }
 
