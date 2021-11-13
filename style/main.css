@@ -229,8 +229,8 @@ h1 {
     display: flex;
     position: relative;
     height: 3.5px;
-    width: 85%;
-    left: 7px;
+    width: 75%;
+    left: 11px;
     background-color: #44BBA4; 
 }
 
@@ -268,7 +268,7 @@ h1 {
     flex-direction: column;
     align-items: center;
 
-    margin-right: 25px;
+    margin-right: 60px;
     margin-top: 15px;
 
     transition: .3s;
