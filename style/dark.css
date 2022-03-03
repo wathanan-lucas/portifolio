@@ -1,0 +1,66 @@
+.bodyy, .logo, .menu, .card-content, .about-h1,
+.skills-h1, .description p, .title h1, .title p,
+.title h3, .photo, .button, .lightDark, .modal, .modal p,
+.attention-img h1, .modal-button .button, .social-midias img, .topo img {
+    transition: .4s;
+}
+
+.bodyy.dark, .menu.dark{
+    background-color: #101115;
+    
+}
+
+.menu a.dark {
+    color: #d2d4d3;
+    border-color: #658f95;
+}
+
+.menu a.dark:hover {
+    color: #658f95;
+}
+
+.logo.dark, .about-h1.dark, 
+.skills-h1.dark, .description p.dark, 
+.title h1.dark, .title p.dark {
+    color: #d2d4d3;
+}
+
+.title h3.dark {
+    color: #a2aaa6;
+}
+
+.card-content.dark, .photo.dark, .button.dark {
+    background-color: #658f95;
+}
+
+.lightDark.dark {
+    border: 3px solid #658f95;
+}
+
+.lightDark.dark:before {
+    background-color: #658f95;
+}
+
+.hamburguer.dark {
+    color: #d2d4d3;
+}
+
+.modal.dark {
+    background: #59595a;
+}
+
+.modal p.dark {
+    color: #d2d4d3;;
+}
+
+.attention-img h1.dark {
+    color: #d2d4d3;
+}
+
+.modal-button .button.dark {
+    background-color: #658f95;
+}
+
+.social-midias img.dark, .topo img.dark {
+    filter: contrast(.1)
+}

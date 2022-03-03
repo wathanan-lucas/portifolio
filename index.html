@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/mobile.css">
+    <link rel="stylesheet" href="./style/dark.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap" rel="stylesheet">
     <title>Wathanan</title>
 </head>
-<body>
+<body class="bodyy">
 
     <header id="home">
         <a href="" class="logo">Wathanan</a>
@@ -25,7 +29,8 @@
                 <li><a href="">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="">Portifolio</a></li>
+                <li><a class="Modal" onclick="Modal.open(), Modal.closeMenu()">Portifolio</a></li>
+                <li class="lightDark"  onclick="Dark()"></li>
             </ul>
         </nav>
     </header>
@@ -129,12 +134,32 @@
             
         </div>
      
+        <div class="modal-overlay">
+            <div class="modal">
+                <div class="attention-img">
+                    <img src="./assets/attention.png" alt="">
+                    <h1>Atenção</h1>
+                    <img src="./assets/attention.png" alt="">
+                </div>
+                
+                <p>Projetos futuros serão adicionados posteriormente.</p>
+                
+                <div class="modal-button" onclick="Modal.close()">
+                    <div class="button">
+                       <p>Fechar</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         
     </main>
 
 
     <script src="./js/scroll.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/dark.js"></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/wow.min.js"></script>
     <script>
         new WOW().init();

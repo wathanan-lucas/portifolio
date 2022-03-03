@@ -173,4 +173,10 @@
         margin-top: 15px;
    }
 
+   .lightDark {
+       position: absolute;
+       left: 38%;
+   }
+
+
 }

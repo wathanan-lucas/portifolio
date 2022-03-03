@@ -21,6 +21,7 @@ function toggleMenu(event) {
         document.documentElement.style.overflow = 'auto';
         
     }
+
 }
 
 btnMobile.addEventListener('click', toggleMenu);
