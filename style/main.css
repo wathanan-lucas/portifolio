@@ -48,7 +48,7 @@ li {
     padding: 80px;
     align-items: center;
     display: grid;
-    grid-template-columns: 2.8fr 1fr;
+    grid-template-columns: 4fr 1fr;
     /* display: flex;
     justify-content: space-between; */
 }
